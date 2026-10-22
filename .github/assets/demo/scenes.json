@@ -1,0 +1,61 @@
+{
+  "accent": "#277765",
+  "output": "demo.png",
+  "disclosure": "Synthetic input \u00b7 exact output from examples/mask-log-line \u00b7 recognized formats only",
+  "scenes": [
+    {
+      "title": "Keep the failure. Mask the sensitive fields.",
+      "blocks": [
+        {
+          "label": "BEFORE",
+          "rows": [
+            "upload of",
+            "/Users/alice/report.csv",
+            "for alice@example.com",
+            "failed: 401 with",
+            "Bearer abc.def"
+          ],
+          "box": [
+            36,
+            151,
+            488,
+            413
+          ],
+          "kind": "code",
+          "size": 23
+        },
+        {
+          "label": "AFTER",
+          "rows": [
+            "upload of ~/report.csv",
+            {
+              "text": "for a***@e***.com",
+              "state": "good"
+            },
+            "failed: 401 with",
+            {
+              "text": "[REDACTED]",
+              "state": "good"
+            }
+          ],
+          "box": [
+            576,
+            151,
+            488,
+            413
+          ],
+          "kind": "rows"
+        }
+      ],
+      "arrows": [
+        [
+          524,
+          350,
+          576,
+          350
+        ]
+      ]
+    }
+  ],
+  "name": "logredact"
+}

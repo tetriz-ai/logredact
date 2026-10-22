@@ -1,0 +1,7 @@
+Captured locally on 2026-10-20. Reproduce it with the commands below.
+
+Reproduction commands (repository root):
+go run ./examples/mask-log-line
+
+Observed output:
+upload of ~/report.csv for a***@e***.com failed: 401 with [REDACTED]

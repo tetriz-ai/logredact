@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200" role="img" aria-label="logredact: mask well-known access tokens, email addresses and home-directory paths in Go log text">
+  <rect width="880" height="200" rx="16" fill="#F5F3EE"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">
+    <text x="48" y="44" fill="#65736C" textLength="753" lengthAdjust="spacingAndGlyphs">level=INFO msg="sync failed" user=<tspan fill="#B4533A">alice@example.com</tspan> auth=<tspan fill="#B4533A">Bearer abc.def</tspan></text>
+    <text x="48" y="76" fill="#65736C" textLength="562" lengthAdjust="spacingAndGlyphs">level=INFO msg="sync failed" user=<tspan fill="#1B2A24">a***@e***.com</tspan> auth=</text>
+    <rect x="618" y="61" width="118" height="21" rx="3" fill="#1B2A24"/>
+    <text x="627" y="76" fill="#F5F3EE" font-weight="600" textLength="100" lengthAdjust="spacingAndGlyphs">[REDACTED]</text>
+  </g>
+  <text x="48" y="141" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.5" fill="#1B2A24">logredact</text>
+  <text x="48" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#33453D">Mask well-known access tokens, email addresses and home-directory paths in Go log text.</text>
+</svg>
